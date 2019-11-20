@@ -1,0 +1,22 @@
+
+# Free Shipping Message Extension For Free
+
+
+### Admin can show the "Free Shipping Message" as per his/her requirement on different pages.
+
+#### I have providing settings for displaying message per pages and also perform styling to message from admin side.
+
+
+## Installation Steps
+
+Step 1 : `php bin/magento module:enable Jmcharadva_FreeShippingmsg`
+
+Step 2 : `php bin/magento setup:upgrade`
+
+Step 3 : `php bin/magento setup:di:compile`
+
+Step 4 : `php bin/magento setup:static-content:deploy`
+
+Step 5 : `php bin/magento cache:flush`
+
+
