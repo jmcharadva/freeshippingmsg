@@ -2,8 +2,8 @@
 # Free Shipping Message Extension For Free
 
 [![License](https://poser.pugx.org/jmcharadva/freeshippingmsg/license)](https://packagist.org/packages/jmcharadva/freeshippingmsg)
-
 [![Total Downloads](https://poser.pugx.org/jmcharadva/freeshippingmsg/downloads)](https://packagist.org/packages/jmcharadva/freeshippingmsg)
+[![Latest Stable Version](https://poser.pugx.org/jmcharadva/freeshippingmsg/v/stable)](https://packagist.org/packages/jmcharadva/freeshippingmsg)
 
 ### Admin can show the "Free Shipping Message" as per his/her requirement on different pages.
 
