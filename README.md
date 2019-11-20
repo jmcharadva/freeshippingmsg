@@ -3,6 +3,8 @@
 
 [![License](https://poser.pugx.org/jmcharadva/freeshippingmsg/license)](https://packagist.org/packages/jmcharadva/freeshippingmsg)
 
+[![Total Downloads](https://poser.pugx.org/jmcharadva/freeshippingmsg/downloads)](https://packagist.org/packages/jmcharadva/freeshippingmsg)
+
 ### Admin can show the "Free Shipping Message" as per his/her requirement on different pages.
 
 #### I have providing settings for displaying message per pages and also perform styling to message from admin side.
