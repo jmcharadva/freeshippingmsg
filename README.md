@@ -27,3 +27,5 @@ Step 5 : `php bin/magento cache:flush`
 	
 #### Stores > Configuration > Jmcharadva > Free Shipping Message Bar
 ![Free Shipping Message Settings](https://i.imgur.com/oCwwNIg.png)
+
+![Frontend Side](https://i.imgur.com/B9KLrik.png)
