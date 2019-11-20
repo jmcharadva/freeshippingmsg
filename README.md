@@ -23,3 +23,6 @@ Step 4 : `php bin/magento setup:static-content:deploy`
 Step 5 : `php bin/magento cache:flush`
 
 
+## Settings
+	
+	#### Stores > Configuration > Jmcharadva > Free Shipping Message Bar
