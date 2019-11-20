@@ -1,0 +1,54 @@
+<?php 
+
+$objectManager 	= 	\Magento\Framework\App\ObjectManager::getInstance();
+$helper 		= 	$objectManager->get('Jmcharadva\FreeShippingmsg\Helper\Data');
+$pageType		= 	$this->getRequest()->getFullActionName();
+
+/*** Getting  General Configuration ***/
+$enable 		=	$helper->getStoreConfigValue('freeshippingmsg/general/enable');
+$displayFlag 	= 	false;
+if($enable == 1)
+{
+
+	$freeShipMsg 	=	$helper->getStoreConfigValue('freeshippingmsg/general/display_text');
+
+	/*** Getting  Where to Display ***/
+	$homepage 		=	$helper->getStoreConfigValue('freeshippingmsg/where_display/display_home');
+	$categorypage 	=	$helper->getStoreConfigValue('freeshippingmsg/where_display/display_category');
+	$productpage 	=	$helper->getStoreConfigValue('freeshippingmsg/where_display/display_product');
+	$cartpage 		=	$helper->getStoreConfigValue('freeshippingmsg/where_display/display_cart');
+	$checkoutpage 	=	$helper->getStoreConfigValue('freeshippingmsg/where_display/display_checkout');
+	$searchpage 	=	$helper->getStoreConfigValue('freeshippingmsg/where_display/display_search');
+
+	/*** Getting  Design ***/
+	$fontColor		=	$helper->getStoreConfigValue('freeshippingmsg/design_msg/font_color');
+	$backColor		=	$helper->getStoreConfigValue('freeshippingmsg/design_msg/background_color');
+	$textAlign		=	$helper->getStoreConfigValue('freeshippingmsg/design_msg/text_align');
+	$alignText = ($textAlign == "") ? "center" : $textAlign;
+	$customCss		=	$helper->getStoreConfigValue('freeshippingmsg/design_msg/custom_css');
+
+
+	$inlineStyle = "color:".$fontColor."; background-color:".$backColor."; text-align:".$alignText.";";
+	$css = $inlineStyle.$customCss;
+
+
+	if(
+		($homepage == 1 && $pageType == "cms_index_index") || 
+		($categorypage == 1 && $pageType == "catalog_category_view") || 
+		($productpage == 1 && $pageType == "catalog_product_view" ) || 
+		($cartpage == 1 && $pageType == "checkout_cart_index") || 
+		($checkoutpage == 1 && $pageType == "checkout_index_index") ||
+		($searchpage == 1 && $pageType == "catalogsearch_result_index")
+	) {
+		$displayFlag = true;
+	} 
+
+	if($displayFlag == true)
+	{
+		echo "<div class='free-shipping-top-bar-msg' style='".$css."'>".$freeShipMsg."</div>";	
+	}
+	
+}
+
+
+
