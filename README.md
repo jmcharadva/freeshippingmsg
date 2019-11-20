@@ -1,6 +1,7 @@
 
 # Free Shipping Message Extension For Free
 
+[![License](https://poser.pugx.org/phpunit/phpunit/license)](https://packagist.org/packages/phpunit/phpunit)
 
 ### Admin can show the "Free Shipping Message" as per his/her requirement on different pages.
 
