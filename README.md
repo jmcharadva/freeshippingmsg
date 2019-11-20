@@ -25,4 +25,4 @@ Step 5 : `php bin/magento cache:flush`
 
 ## Settings
 	
-	#### Stores > Configuration > Jmcharadva > Free Shipping Message Bar
+#### Stores > Configuration > Jmcharadva > Free Shipping Message Bar
